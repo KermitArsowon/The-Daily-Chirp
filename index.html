@@ -1,0 +1,417 @@
+<html>
+    <head>
+        <title>THE DAILY CHIRP</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+  body {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+.header {
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px 10px;
+
+}
+.header a.logo {
+  float: left;
+  color: rgb(39, 62, 101);
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 12px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+  font-family: Verdana, Tahoma, sans-serif;
+  color: rgb(39, 62, 101);
+}
+
+.header a {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 33px;
+  border-radius: 4px;
+}
+
+.header-right a:visited {
+  color:rgb(33, 59, 94);
+}
+
+.header-right a:hover {
+  background-color: #6b8bbb;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3a4b73;
+}
+
+ul li {
+  float: left;
+  width: 150px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #273554;
+}
+
+img {
+  width: 1320px;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 9px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+}
+
+.headline {
+  position: relative;
+}
+
+.headline-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
+  position: absolute;
+  top: 8px;
+  left: 12px; 
+}
+
+.headline-text h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.headline-text p {
+  font-size: 18px;
+  color: white;
+  opacity: 0.9;
+}
+
+.headline-text a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background-color: #ffffff40;
+  padding: 10px
+}
+
+.headline-text a:hover {
+  background-color: #ffffff8a;
+}
+
+/*start of new thing*/
+
+.column {
+  float: left;
+  width: 35.33%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*start of new thing*/
+
+.ad1 img {
+  object-fit: contain;
+  width: 595px;
+  height: 85px;
+  float: left;
+  margin-left: 150px;
+  margin-bottom: 20px;
+}
+
+/*start of new thing*/
+
+.left {
+  position: relative;
+}
+
+.fashionarticle-text {
+  position: absolute;
+  bottom: 8px;
+  left: 30px;
+  top: 100px;
+}
+
+.fashionarticle-text h6 {
+  font-size: 20px;
+  color: white;
+}
+
+.fashionarticle-text h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.fashionarticle-text a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  background-color: #ffffff40;
+  padding: 10px
+}
+
+.fashionarticle-text a:hover {
+  background-color: #ffffff8a;
+}
+
+/*new stuff here*/
+
+.article3-text {
+  position: absolute;
+  bottom: 8px;
+  left: 500px;
+  top: 100px;
+}
+
+.article3-text h6 {
+  font-size: 20px;
+  color: white;
+}
+
+.article3-text h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.article3-text a {
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  background-color: #ffffff40;
+  padding: 10px
+}
+
+.article3-text a:hover {
+  background-color: #ffffff8a;
+}
+
+/*new thing*/
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  float: right;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+/*more more*/
+
+.ad2 img {
+  object-fit: contain;
+  width: 300px;
+  height: 300px;
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+/*more more*/
+
+.other-news  {
+  border-style: solid;
+  border-width: 0px 0px 2px 0px;
+  border-color: #a3a3a3;
+  width: 910px;
+  height: 230px;
+}
+
+.other-news img {
+  float: left;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.other-news p {
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.other-news a {
+  font-size: 15px;
+  color: rgb(50, 63, 118);
+  text-decoration: none;
+  background-color: #d3d5df;
+  padding: 12px;
+  font-family:Verdana, Tahoma, sans-serif;
+}
+
+.other-news a:hover {
+  background-color: #4b4e8f8a;
+}
+
+
+
+</style>
+    </head>
+
+<body>
+<div class="header">
+  <a class="logo">THE DAILY CHIRP</a>
+  <div class="header-right">
+    <a href="index.html">HOME</a>
+    <a href="error404.html">CONTACT</a>
+    <a href="error404.html">ABOUT</a>
+  </div>
+</div>
+
+<div class="navigation">
+  <ul>
+    <li><a href="news.html">News</a></li>
+    <li><a href="editorial.html">Editorial</a></li>
+    <li><a href="fashion.html">Fashion</a></li>
+    <li><a href="entertainment.html">Entertainment</a></li>
+    <li><a href="sports.html">Sports</a></li>
+  </ul>
+</div>
+
+</br>
+
+<div class="headline">
+  <img src="images\bagyo oh no.jpg">
+    <div class="headline-text"><h1></br>Tropical depression outside PAR </br> intensifies into Tropical Storm Fung-wong</h1>
+      <p>A tropical depression outside the Philippines strengthened into tropical storm Fung-wong, </br>
+        expected to intensify rapidly and potentially make landfall in Northern or Central Luzon by </br> November 10,  
+        prompting warnings of severe weather and hazardous sea conditions.</p>
+      </br> <a href="headline.html">Continue Reading...</a></div>
+</div>
+
+</br>
+
+<div class="left">
+  <div class="row">
+    <div class="column">
+      <img src="images\shein1.jpg" style="width:450px">
+    </div>
+    <div class="column">
+      <img src="images\interior.jpg" style="width:450px">
+    </div>
+
+  <div class="fashionarticle-text"> <h6>FASHION</h6>
+    <h1>Shein opens first store in Paris </br>as France moves to suspend </br>website</h1>
+      <a href="fashion article 1.html">Continue Reading...</a>
+  </div>
+
+  <div class="article3-text"> <h6>NEWS</h6>
+    <h1>Temporarily closed, </br>Earthquake shakes beloved </br>entertainment center</h1>
+      <a href="article3.html">Continue Reading...</a>
+  </div>
+
+  <div class="right">
+  <a href="error404.html" class="fa fa-facebook"></a>
+  <a href="error404.html" class="fa fa-twitter"></a>
+  <a href="error404.html" class="fa fa-youtube"></a>
+  <a href="error404.html" class="fa fa-yahoo"></a>
+  </div>
+
+  <div class="ad2">
+    <img src="images\Black and White Modern Cyber Monday Feed Ad.png">
+  </div>
+
+  </br>
+
+  <hr style="width:915px;text-align:left;margin-left:0;background-color:rgb(33, 59, 94);height:2px; margin-top: 400px;">
+
+  </br>
+
+  <div class="ad1">
+  <img src="images\Green Blue Textured Abstract Shapes Mobile Banner.png">
+  </div>
+</div>
+ 
+<div class="other-news">
+    <img src="images\alex eala 1.jpg">
+      <h1>Eala back in Philippines; SEA Games stint looms</h1>
+      <p>Alex Eala has returned base to recharge first before preparing for a far nobler duty 
+      with the national team after etching another history for Philippine tennis in the world stage... </p>
+     <a href="sports 2.html">Continue Reading...</a>
+
+</div>
+
+<div class="other-news">
+    <img src="images\bite victim.jpg">
+      <h1>Prank gone wrong — 10-year-old killed in local diner</h1>
+      <p>On the morning of November 12th, a child’s birthday celebration at the popular “Fredbear’s Family Diner” 
+        turned into a nightmare when a group of local teenagers forced a young boy into the mouth.... </p>
+     <a href="article1.html">Continue Reading...</a></div>
+
+</div>
+
+<div class="other-news">
+    <img src="images\malleus reference.webp">
+      <h1>New Twisted Wonderland figure sees Malleus Draconia in his “Glorious Masquerade” outfit</h1>
+      <p>Pre-orders have officially opened for a new figure of Malleus Draconia from the popular 
+        mobile game, Disney Twisted-Wonderland...</p>
+     <a href="error404.html">Continue Reading...</a></div>
+
+</div>
+
+
+</body>
+</html>
